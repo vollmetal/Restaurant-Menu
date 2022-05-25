@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#listTitle {
+    text-align: center;
+}
+
+body div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.listItem {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: aquamarine;
+    align-items: center;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border: 3px;
+    border-style: solid;
+    padding: 1rem;
+    
+}
+.listItem div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.listItem div .itemName {
+    border-bottom: 2px;
+    border-bottom-style:double;
+}
+
+.listItem img {
+    width: 100%;
+    border: 3px;
+    border-style: groove;
+}
+
+#listBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) and (min-width: 200px)
+{
+    .listItem {
+        width: 100%;
+    }
+}
